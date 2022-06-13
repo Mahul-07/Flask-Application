@@ -1,0 +1,22 @@
+{
+    "params":
+    {
+      "local_server":"True",
+      "local_uri": "mysql://root:@localhost:8080/domain",
+      "prod_uri":"mysql://root:@localhost/domain",
+      "fb_url":"https://facebook.com/domain",
+      "tw_url":"https://twitter.com/domain",
+      "gh_url": "https://github.com/domain",
+      "blog_name": "Domain",
+      "tag_line": " ",
+      "gmail-user":"your-email@gmail.com",
+      "gmail-password":"gmailpassword",
+      "about_text": "Hi my name is Mahul",
+      "no_ofposts":5,
+      "login_image":"login.svg",
+      "admin_user":"Mahul",
+      "admin_password":"Helloadmin",
+      "upload_location":"C:\\Users\\MAHUL\\Documents\\Flask\\Blog>"
+    }
+  }
+  

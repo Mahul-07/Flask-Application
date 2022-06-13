@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{url_for('static', filename='img/about-bg.jpg') }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Admin Panel</h1>
+            <span class="subheading">Manage your posts and change them</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+      <a href="/logout"> <button class="btn btn-primary">Logout</button></a>
+        <h1>Upload A file</h1>
+<hr>
+          <form action="/uploader" method="POST" enctype="multipart/form-data">
+
+<input type="file" name="file">
+<button type ="submit" class="btn btn-primary">Submit</button>
+
+          </form>
+        <hr>
+<h1>Edit Posts</h1>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+                <td><a href="/edit/Firtname"><button class="btn btn-primary">Edit</button></a></td>
+                <td><button class="btn btn-primary">Delete</button></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
+{% endblock %}
